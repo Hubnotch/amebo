@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.showcase {
+    background-color: #343897;
+    color: #fff;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.showcase h2 {
+    margin-bottom: 1rem;
+}
+
+.container {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background-color: #ffffff !important;
+}
+
+.container h4 {
+    margin: 2rem 0;
+}
+
+.app-features {
+    display: flex;
+    margin: 0 0 2rem 0;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+
+.app-feature-item {
+    border: 1px solid #dadada;
+    box-shadow: 1px 2px 3px #ccc;  
+    margin: 0 1rem 0 0;
+    width: 33.333%;
+}
+
+.app-feature-item .app-feature-text {
+    font-weight: 600;
+    margin: 0.7rem auto;
+}
+
+.app-feature-item .feature-text {
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    padding: 2rem 0 0 0;
+}
+
+.news-letter {
+    line-height: 2;
+}
+
+.news-letter .news-letter-text {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 70%;
+    margin-bottom: 15px;
+}
+.icon {
+    padding: 5px;
+    background: #343897;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+

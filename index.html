@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMEBO</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<>
+    <div class="showcase">
+        <div class="showcase-text">
+            <h2>Amebo</h2>
+            <p>An app that tells you what people think, feel or say</p>
+            <p>about you in their various discussions with others.</p>
+        </div>
+        <div class="right-image">
+            there is an image here
+        </div>
+    </div>
+    <div class="container">
+        <h4>App Feature</h4>
+        <div class="app-features">
+            <div class="app-feature-item">
+                <img src="1.png" alt="">
+                <p class="app-feature-text">secured</p>
+                <p class="feature-text"> The app is secured. You are the only one that have access to the app.</p>
+            </div>
+
+
+            <div class="app-feature-item">
+                <img src="2.png" alt="">
+                <p class="app-feature-text">Notification</p>
+                <p class="feature-text"> Once there is a discussion about you, as a user you get notified automatically.
+                </p>
+            </div>
+
+            <div class="app-feature-item">
+                <img src="3.png" alt="">
+                <p class="app-feature-text">Captivating</p>
+                <p class="feature-text"> You get to see everyone talking about you on all the social media platfroms.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-letter">
+            <p class="news-letter-text"> Launching very soon</p>
+            <p>Simply give us your email address and we will let you know when we launch.</p>
+            <form action="index.php" method="post">
+                <div class="input-container">
+                <input class="input-field" type="email" placeholder=" Enter Your Email Address">
+               <span class="icon">Join our waiting list</span>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+
+// Create database
+$sql = "CREATE DATABASE myDB";
+if ($conn->query($sql) === TRUE) {
+    echo "Database created successfully";
+} else {
+    echo "Error creating database: " . $conn->error;
+}
+
+// sql to create table
+$sql = "CREATE TABLE MyGuests (
+email VARCHAR(50),
+reg_date TIMESTAMP
+)";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Table MyGuests created successfully";
+} else {
+    echo "Error creating table: " . $conn->error;
+}
+
+$sql = "INSERT INTO MyGuests (email)
+VALUES ('john@example.com')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+
+
+
+$conn->close();
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
