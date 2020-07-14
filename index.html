@@ -7,9 +7,10 @@
     <title>AMEBO</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<>
     <div class="showcase">
         <div class="showcase-text">
             <h2>Amebo</h2>
@@ -17,12 +18,12 @@
             <p>about you in their various discussions with others.</p>
         </div>
         <div class="right-image">
-            <h2>Amebo</h2>
+            <img src="Vector.png" alt="">
         </div>
     </div>
     <div class="container">
         <h4>App Feature</h4>
-        <div class="app-features">
+        <div class="app-features" data-aos="fade-right">
             <div class="app-feature-item">
                 <img src="1.png" alt="">
                 <p class="app-feature-text">secured</p>
@@ -30,14 +31,14 @@
             </div>
 
 
-            <div class="app-feature-item">
+            <div class="app-feature-item"  data-aos="zoom-in-up">
                 <img src="2.png" alt="">
                 <p class="app-feature-text">Notification</p>
                 <p class="feature-text"> Once there is a discussion about you, as a user you get notified automatically.
                 </p>
             </div>
 
-            <div class="app-feature-item">
+            <div class="app-feature-item" data-aos="fade-left">
                 <img src="3.png" alt="">
                 <p class="app-feature-text">Captivating</p>
                 <p class="feature-text"> You get to see everyone talking about you on all the social media platfroms.
@@ -56,6 +57,9 @@
             </form>
         </div>
     </div>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
