@@ -12,10 +12,16 @@ body {
     margin-right: auto;
 }
 
-.showcase {
+.showcasing {
     background-color: #343897;
     color: #fff;
     height: 50vh;
+}
+
+.showcase {
+    background-color: #343897;
+    color: #fff;
+    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -31,9 +37,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
+/*    fix this code*/
+/* .right-image img {
+    width: fit-content;
+} */
 
-.container {
+.container-main {
     text-align: center;
     background: rgb(255, 255, 255);
     background-color: #ffffff !important;
@@ -41,13 +52,13 @@ body {
     margin: 1rem;
 }
 
-.container h4 {
+.container-main h4 {
     margin: 2rem 0;
 }
 
 .app-features {
     display: flex;
-    margin: 0 0 2rem 0;
+    margin: 0 0 4rem 0;
     justify-content: space-around;
     align-items: center;
  
@@ -56,8 +67,17 @@ body {
 .app-feature-item {
     border: 1px solid #dadada;
     box-shadow: 1px 2px 3px #ccc;  
-    margin: 0 1rem 0 0;
-    width: 33.333%;
+    margin: 0 2rem 0 0;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.app-feature-item > div {
+    width: 8rem;
+    height: 8rem;
+    border: 2px solid #dadada;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 .app-feature-item .app-feature-text {
@@ -74,10 +94,6 @@ img {
     padding: 2rem 0 0 0;
 }
 
-.news-letter {
-    line-height: 2;
-}
-
 .news-letter .news-letter-text {
     font-weight: 700;
     font-size: 2rem;
@@ -90,10 +106,10 @@ img {
     margin-bottom: 15px;
 }
 .icon {
-    padding: 5px;
+    padding: 5px 15px;
     background: #343897;
     color: white;
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 
@@ -103,23 +119,43 @@ img {
 }
 
 .input-field:focus {
-    border: 2px solid dodgerblue;
+    border: 2px solid #343897;
 }
 
 form {
     display: flex;
     justify-content: center;
+    margin-top: 1.5rem;
 }
 
 
 @media screen and (max-width:675px) {
+    .showcase {
+        background-color: #343897;
+        color: #fff;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 1.6;
+        padding: 1rem 1rem;
+    }
+    
+    
     .app-features {
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-     
+        margin-bottom: 4rem;
+    }
+    .app-features .app-feature-item {
+        border: 1px solid #dadada;
+        justify-content: space-between;
+        box-shadow: 1px 2px 3px #ccc;  
+        margin: 0 0 3rem 0;
+        width: 20rem;
     }
 }
 

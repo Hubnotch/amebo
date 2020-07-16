@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMEBO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
+    </head>
+
+<body>
 
     <div class="showcase">
         <div class="showcase-text">
@@ -18,28 +21,28 @@
             <p>about you in their various discussions with others.</p>
         </div>
         <div class="right-image">
-            <img src="Vector.png" alt="">
+            <!-- <img class="image-resize" src="amebo.PNG" alt=""> -->
         </div>
     </div>
-    <div class="container">
+    <div class="container-main">
         <h4>App Feature</h4>
         <div class="app-features" data-aos="fade-right">
             <div class="app-feature-item">
-                <img src="1.png" alt="">
+                <div><img src="1.png" alt=""></div>
                 <p class="app-feature-text">secured</p>
                 <p class="feature-text"> The app is secured. You are the only one that have access to the app.</p>
             </div>
 
 
-            <div class="app-feature-item"  data-aos="zoom-in-up">
-                <img src="2.png" alt="">
+            <div class="app-feature-item" data-aos="zoom-in-up">
+                <div><img src="2.png" alt=""></div>
                 <p class="app-feature-text">Notification</p>
                 <p class="feature-text"> Once there is a discussion about you, as a user you get notified automatically.
                 </p>
             </div>
 
             <div class="app-feature-item" data-aos="fade-left">
-                <img src="3.png" alt="">
+                <div><img src="3.png" alt=""></div>
                 <p class="app-feature-text">Captivating</p>
                 <p class="feature-text"> You get to see everyone talking about you on all the social media platfroms.
                 </p>
@@ -49,17 +52,27 @@
         <div class="news-letter">
             <p class="news-letter-text"> Launching very soon</p>
             <p>Simply give us your email address and we will let you know when we launch.</p>
+            
             <form action="index.php" method="post">
                 <div class="input-container">
-                <input class="input-field" type="email" placeholder=" Enter Your Email Address">
-               <span class="icon">Join our waiting list</span>
-            </div>
+                    <input class="input-field" type="email" name="email" placeholder=" Enter Your Email Address">
+                    <span class="icon">Join our waiting list</span>
+                </div>
             </form>
         </div>
     </div>
+
+
     <script>
         AOS.init();
-      </script>
+    </script>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
