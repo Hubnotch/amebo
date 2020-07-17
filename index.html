@@ -6,73 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMEBO</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    </head>
+    <link rel="stylesheet" href="style.css">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+</head>
 
 <body>
+    <img src="/images/upper-notch.png" alt="" class="upper-notch">
 
-    <div class="showcase">
-        <div class="showcase-text">
-            <h2>Amebo</h2>
-            <p>An app that tells you what people think, feel or say</p>
-            <p>about you in their various discussions with others.</p>
-        </div>
-        <div class="right-image">
-            <!-- <img class="image-resize" src="amebo.PNG" alt=""> -->
-        </div>
-    </div>
-    <div class="container-main">
-        <h4>App Feature</h4>
-        <div class="app-features" data-aos="fade-right">
-            <div class="app-feature-item">
-                <div><img src="1.png" alt=""></div>
-                <p class="app-feature-text">secured</p>
-                <p class="feature-text"> The app is secured. You are the only one that have access to the app.</p>
+
+    <div class="grid-container">
+
+        <!-----header and logo-------->
+        <div class="showcase-container">
+            <div class="showcase-image" data-aos="fade-up" data-aos-duration="3000">
+
             </div>
+            <div class="showcase-text">
+                <h1 class="logo-text" data-aos="zoom-in">Amebo</h1>
+                <p class="showcase-para">An app that tells you what people think, feel or say</p>
+                <p class="showcase-para"> about you in their various discussions with others.</p>
 
+                <form action="index.php" method="post">
+                    <p class="lauching-soon">Launching Very Soon</p>
+                    <div class="input-container">
+                        <input class="input-field" type="name" name="name" placeholder=" Enter Your Name">
+                        <input class="input-field" type="email" name="email" placeholder=" Enter Your Email Address">
 
-            <div class="app-feature-item" data-aos="zoom-in-up">
-                <div><img src="2.png" alt=""></div>
-                <p class="app-feature-text">Notification</p>
-                <p class="feature-text"> Once there is a discussion about you, as a user you get notified automatically.
-                </p>
-            </div>
-
-            <div class="app-feature-item" data-aos="fade-left">
-                <div><img src="3.png" alt=""></div>
-                <p class="app-feature-text">Captivating</p>
-                <p class="feature-text"> You get to see everyone talking about you on all the social media platfroms.
-                </p>
+                        <span type="submit" name="submit" class="icon">Notify Me</span>
+                    </div>
+                </form>
             </div>
         </div>
+        <!-----how the app works-------->
+        <div class="how-app-works">
+            <h2 class="uniform how-app-works-title">How the app works</h2>
+            <div class="how-app-works-image">
 
-        <div class="news-letter">
-            <p class="news-letter-text"> Launching very soon</p>
-            <p>Simply give us your email address and we will let you know when we launch.</p>
-            
+            </div>
+            <p class="how-app-works-text" data-aos="zoom-in-up">
+                A new user has to register before using the app, while
+                a registered user need to login inorder to access the app.
+                All what this app does is to give you information on
+                things that were said about you when you are not
+                around people you know. This app gets all the details/gist
+                from all the social media platforms that you have an
+                account with. It also reads your contacts’ text messages and
+                picks out texts where your name is mentioned. The user has to grant
+                the app permission to read contacts and social media files for maximum
+                functionality.
+            </p>
+        </div>
+
+        <!-----App features-------->
+        <div class="app-features">
+            <h2 class="uniform app-features-title">App Feature</h2>
+            <div class="app-features" data-aos="fade-right">
+                <div class="app-feature-item">
+                    <div><img src="/images/1.png" alt=""></div>
+                    <p class="app-feature-text">secured</p>
+                    <p class="feature-text"> The app is secured. You are the only one that have access to the app.</p>
+                </div>
+
+
+                <div class="app-feature-item" data-aos="zoom-in-up">
+                    <div><img src="/images/2.png" alt=""></div>
+                    <p class="app-feature-text">Notification</p>
+                    <p class="feature-text"> Once there is a discussion about you, as a user you get notified
+                        automatically.
+                    </p>
+                </div>
+
+                <div class="app-feature-item" data-aos="fade-left">
+                    <div><img src="/images/3.png" alt=""></div>
+                    <p class="app-feature-text">Captivating</p>
+                    <p class="feature-text"> You get to see everyone talking about you on all the social media
+                        platfroms.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-----Apps Looks-------->
+        <div class="apps-look">
+            <p class="apps-look-text">
+                Curious about the look? </br> Here is what the app will look like.
+            </p>
+            <div class="apps-look-image">
+
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+
+                        <a href="/images/sixth.jpeg" data-lightbox> <img class="carousel__photo initial" src="/images/sixth.jpeg"> </a>
+                        <a href="/images/first.jpeg" data-lightbox> <img class="carousel__photo" src="/images/first.jpeg"> </a>
+                        <a href="/images/second.jpeg" data-lightbox> <img class="carousel__photo" src="/images/second.jpeg"> </a>
+                        <a href="/images/third.jpeg" data-lightbox> <img class="carousel__photo" src="/images/third.jpeg"> </a>
+                        <a href="/images/fourth.jpeg" data-lightbox> <img class="carousel__photo" src="/images/fourth.jpeg"> </a>
+                        <a href="/images/fifth.jpeg" data-lightbox> <img class="carousel__photo" src="/images/fifth.jpeg"> </a>
+
+                        <div class="carousel__button--next"></div>
+                        <div class="carousel__button--prev"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-----footer and form-------->
+        <div class="launching-soon-form" data-aos="zoom-in-up">
             <form action="index.php" method="post">
                 <div class="input-container">
+                    <input class="input-field" type="name" name="name" placeholder=" Enter Your Name">
                     <input class="input-field" type="email" name="email" placeholder=" Enter Your Email Address">
-                    <span class="icon">Join our waiting list</span>
+                    <span class="icon">Notify Me</span>
                 </div>
             </form>
         </div>
+
     </div>
 
 
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
     <script>
         AOS.init();
     </script>
-
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="path/to/lightbox.js"></script>
 </body>
 
 </html>
